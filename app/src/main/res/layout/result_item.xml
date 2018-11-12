@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Post Title" />
+
+    <TextView
+        android:id="@+id/links_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autoLink="web"
+        app:layout_constraintStart_toStartOf="@+id/title_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/subreddit_text_view"
+        tools:text="https://open.spotify.com/track/w356wljk43tt34" />
+
+    <TextView
+        android:id="@+id/subreddit_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/title_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view"
+        tools:text="r/listentothis" />
+
+    <TextView
+        android:id="@+id/upvote_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/links_text_view"
+        app:layout_constraintTop_toBottomOf="@id/links_text_view"
+        tools:text="21 upvotes" />
+</android.support.constraint.ConstraintLayout>

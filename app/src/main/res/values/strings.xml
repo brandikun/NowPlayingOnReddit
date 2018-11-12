@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Now Playing On Reddit</string>
+    <string name="search_hint">Search a Music Genre or Artist</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="view_all">View All</string>
+</resources>
